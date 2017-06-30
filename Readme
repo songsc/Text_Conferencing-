@@ -1,0 +1,6 @@
+Shuangchen Song (999931052)
+ECE361 Lab2
+
+A time out feature is implemented on the server side. The time out value is defined as "#define TIME_OUT 30" in file utils.h, which means the connection to client will be disconnected if no packet is recevied for more than 30 seconds.
+
+A sperate thread is implemented for checking last active time. Concurrency is handled by using locks. To use CPU clock as real time clock, -lrt is added as a compilation flag.
